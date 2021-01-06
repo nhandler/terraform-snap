@@ -1,6 +1,6 @@
 name: terraform
 base: core18
-version: master
+version: '0.14.3'
 summary: build, change, and version infrastructure safely and efficiently
 description: |
   Terraform is a tool for building, changing, and versioning infrastructure
@@ -18,5 +18,5 @@ apps:
 parts:
   terraform:
     source: https://github.com/hashicorp/terraform.git
-    source-tag: master
+    source-tag: v$SNAPCRAFT_PROJECT_VERSION
     plugin: go
